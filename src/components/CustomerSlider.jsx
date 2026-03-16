@@ -1,5 +1,6 @@
 // Key Idea:
 // Professional responsive slider using Lucide icons for arrows.
+// Added native lazy loading for images to improve performance.
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -41,6 +42,7 @@ export default function CustomerSlider() {
           journeys across Agra, Delhi, Jaipur, and North India.
         </p>
       </div>
+
       <div className="relative max-w-4xl mx-auto px-4">
         {/* slider */}
         <div className="overflow-hidden rounded-2xl shadow-lg">
@@ -55,6 +57,8 @@ export default function CustomerSlider() {
                 <img
                   src={img}
                   alt="Customer"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-[260px] md:h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
