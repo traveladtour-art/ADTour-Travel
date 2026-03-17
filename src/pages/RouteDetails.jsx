@@ -29,13 +29,13 @@ export default function RouteDetails() {
       {/* SEO */}
       <Helmet>
         <title>
-          {route.from} to {route.to} Taxi Service |{" "}
+          {route.from} to {route.to} Car Rental with Driver |{" "}
           {import.meta.env.VITE_SITE_NAME}
         </title>
 
         <meta
           name="description"
-          content={`Book reliable taxi service from ${route.from} to ${route.to}. Comfortable cars, experienced drivers, and safe outstation travel.`}
+          content={`Book reliable car rental with driver from ${route.from} to ${route.to}. Comfortable cars, experienced drivers, and safe outstation travel across North India.`}
         />
 
         <link
@@ -43,14 +43,21 @@ export default function RouteDetails() {
           href={`${import.meta.env.VITE_WEBSITE}/routes/${slug}`}
         />
 
+        {/* Open Graph */}
         <meta
           property="og:title"
-          content={`${route.from} to ${route.to} Taxi Service`}
+          content={`${route.from} to ${route.to} Car Rental with Driver`}
         />
 
         <meta
           property="og:description"
-          content={`Comfortable taxi from ${route.from} to ${route.to} with professional drivers.`}
+          content={`Comfortable car rental with driver from ${route.from} to ${route.to} for tours and outstation travel.`}
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`${import.meta.env.VITE_WEBSITE}/routes/${slug}`}
         />
       </Helmet>
       {/* HERO */}

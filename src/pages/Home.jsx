@@ -19,32 +19,37 @@ export default function Home({
   return (
     <div className="w-full">
       <Helmet>
-        <title>Delhi Taxi Service | {siteName}</title>
+        <title>
+          Delhi Car Rental with Driver | Tour & Travel Service | {siteName}
+        </title>
 
         <meta
           name="description"
-          content="Book reliable taxi service from Delhi to Manali, Shimla, Agra, Jaipur and more. Professional drivers and comfortable cars for safe travel."
+          content="Book reliable car rental with driver and tour & travel services from Delhi to Manali, Shimla, Agra, Jaipur and across North India. Comfortable cars and professional drivers for safe journeys."
         />
 
         <meta
           name="keywords"
-          content="Delhi taxi service, Delhi cab booking, Delhi to Manali taxi, Delhi to Shimla taxi, outstation taxi Delhi"
+          content="Delhi car rental with driver, Delhi tour and travel service, Delhi to Manali car with driver, Delhi to Shimla car service, outstation car rental Delhi"
         />
 
+        {/* Canonical */}
         <link rel="canonical" href={siteUrl} />
 
-        {/* Social sharing */}
+        {/* Open Graph / Social Sharing */}
         <meta
           property="og:title"
-          content={`Delhi Taxi Service | ${siteName}`}
+          content={`Delhi Car Rental with Driver | ${siteName}`}
         />
+
         <meta
           property="og:description"
-          content="Reliable taxi service from Delhi to Manali, Shimla, Agra and more."
+          content="Reliable car rental with driver and tour & travel services from Delhi to Manali, Shimla, Agra, Jaipur and across North India."
         />
+
+        <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
       </Helmet>
-
       <Hero />
       <Vehicles />
 

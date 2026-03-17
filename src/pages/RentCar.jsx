@@ -9,11 +9,11 @@ export default function RentCar() {
     <div className="pt-18">
       {/* SEO */}
       <Helmet>
-        <title>Taxi Fleet | Cars for Hire | AD Tour & Travel</title>
+        <title>Travel Cars | Car Rental with Driver | AD Tour & Travel</title>
 
         <meta
           name="description"
-          content="Explore our taxi fleet including sedan, SUV and tempo traveller. Comfortable cars with professional drivers for outstation travel."
+          content="Explore our fleet of comfortable travel cars including sedan, SUV and tempo traveller. Reliable car rental with driver for tours and outstation trips across North India."
         />
 
         <link
@@ -21,13 +21,23 @@ export default function RentCar() {
           href={`${import.meta.env.VITE_WEBSITE}/rent-car`}
         />
 
-        <meta property="og:title" content="Taxi Fleet | AD Tour & Travel" />
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Travel Cars | Car Rental with Driver | AD Tour & Travel"
+        />
+
         <meta
           property="og:description"
-          content="Choose from our range of comfortable travel cars for tours and outstation trips."
+          content="Choose from our range of sedan, SUV and tempo traveller vehicles with professional drivers for comfortable tours and outstation journeys."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`${import.meta.env.VITE_WEBSITE}/rent-car`}
         />
       </Helmet>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-slate-100 to-white pt-28 pb-10 text-center">
         <div className="text-center mb-10 px-4">
