@@ -13,18 +13,16 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Contact AD Tour & Travel | Car Rental with Driver in Delhi
-        </title>
+        <title>Contact AD Tour Travel | Car Rental with Driver in Delhi</title>
 
         <meta
           name="description"
-          content="Contact AD Tour & Travel for reliable car rental with driver and tour & travel services across Delhi, Manali, Shimla, Agra, Jaipur and North India."
+          content="Contact AD Tour Travel for reliable car rental with driver and tour & travel services across Delhi, Manali, Shimla, Agra, Jaipur and North India."
         />
 
         <meta
           name="keywords"
-          content="contact AD Tour & Travel, Delhi car rental with driver contact, Delhi tour and travel service contact, outstation car with driver Delhi"
+          content="contact AD Tour Travel, Delhi car rental with driver contact, Delhi tour and travel service contact, outstation car with driver Delhi"
         />
 
         {/* Open Graph */}

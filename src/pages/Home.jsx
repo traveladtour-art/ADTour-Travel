@@ -22,7 +22,7 @@ export default function Home({
       <Helmet>
         {/* Page Title */}
         <title>
-          Delhi Car Rental with Driver | Tour & Travel Service | {siteName}
+          Delhi Car Rental with Driver | Tour Travel Service | {siteName}
         </title>
 
         {/* Meta Description */}

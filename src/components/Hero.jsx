@@ -22,7 +22,7 @@ const Hero = () => {
         {/* Heading */}
         <h1 className="font-berkshire drop-shadow-lg text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight">
           Experience the Beauty of India with{" "}
-          <span className="text-sky-400 font-bold">AD Tour & Travel</span>
+          <span className="text-sky-400 font-bold">AD Tour Travel</span>
         </h1>
 
         {/* Subtitle */}

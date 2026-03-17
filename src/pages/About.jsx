@@ -7,7 +7,6 @@ import OurStory from "../components/OurStory";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TrustStats from "../components/TrustStats";
 import CTA from "../components/CTA";
-import EnquiryForm from "../components/EnquiryForm";
 
 const About = () => {
   const siteName = import.meta.env.VITE_SITE_NAME;
@@ -20,12 +19,12 @@ const About = () => {
 
         <meta
           name="description"
-          content="Learn about AD Tour & Travel with 20+ years of experience providing reliable car rental with driver and tour & travel services across Delhi, Himachal Pradesh, Uttarakhand, Punjab, Rajasthan and North India."
+          content="Learn about AD Tour Travel with 20+ years of experience providing reliable car rental with driver and tour & travel services across Delhi, Himachal Pradesh, Uttarakhand, Punjab, Rajasthan and North India."
         />
 
         <meta
           name="keywords"
-          content="Delhi car rental with driver, AD Tour & Travel, Delhi tour and travel service, Delhi to Manali car with driver, Delhi to Shimla car with driver"
+          content="Delhi car rental with driver, AD Tour  Travel, Delhi tour and travel service, Delhi to Manali car with driver, Delhi to Shimla car with driver"
         />
 
         {/* Open Graph */}

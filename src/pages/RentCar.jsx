@@ -9,7 +9,7 @@ export default function RentCar() {
     <div className="pt-18">
       {/* SEO */}
       <Helmet>
-        <title>Travel Cars | Car Rental with Driver | AD Tour & Travel</title>
+        <title>Travel Cars | Car Rental with Driver | AD Tour Travel</title>
 
         <meta
           name="description"
@@ -24,7 +24,7 @@ export default function RentCar() {
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="Travel Cars | Car Rental with Driver | AD Tour & Travel"
+          content="Travel Cars | Car Rental with Driver | AD Tour Travel"
         />
 
         <meta
