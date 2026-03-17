@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Company */}
         <div>
           <h3 className="text-xl font-bold text-white">
-            AD <span className="text-sky-500">Tour & Travel</span>
+            AD <span className="text-sky-500">Tour Travel</span>
           </h3>
 
           <p className="text-sm mt-4 text-slate-400 leading-relaxed">

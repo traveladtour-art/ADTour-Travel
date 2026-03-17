@@ -45,11 +45,24 @@ export default function Navbar({
     <div className="w-full flex justify-center fixed top-6 z-[100]">
       <nav className="flex items-center justify-between w-[92%] max-w-6xl px-5 py-3 rounded-full bg-white/90 backdrop-blur-md shadow-lg">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Site Logo" className="h-9 w-auto" />{" "}
-          <span className="font-bold text-lg text-sky-500">AD Travels</span>
-        </Link>
+        <Link to="/" className="flex items-center gap-2 group">
+          {/* Logo */}
+          <img
+            src="/logo.png"
+            alt="AD Tour Travel Logo"
+            className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+          />
 
+          {/* Text */}
+          <div className="flex flex-col leading-[1.1]">
+            <span className="font-semibold text-[15px] text-sky-500 tracking-wide">
+              AD TOUR
+            </span>
+            <span className="text-[10px] font-bold text-gray-400 tracking-[3px]">
+              TRAVEL
+            </span>
+          </div>
+        </Link>
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 relative">
           {menuItems.map((item) => (

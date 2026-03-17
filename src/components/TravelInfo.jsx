@@ -14,7 +14,7 @@ export default function TravelInfo() {
 
         {/* Description */}
         <p className="mt-6 text-slate-600 leading-relaxed text-sm sm:text-base max-w-3xl mx-auto">
-          AD Tour & Travel provides reliable taxi and car rental services for
+          AD Tour Travel provides reliable taxi and car rental services for
           comfortable road journeys across North India. Whether you are planning
           a trip to the deserts of Rajasthan, the beautiful hills of Himachal
           Pradesh, the spiritual cities of Uttar Pradesh, or the scenic

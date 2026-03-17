@@ -9,13 +9,19 @@ export default function RentCar() {
     <div className="pt-18">
       {/* SEO */}
       <Helmet>
-        <title>Travel Cars | Car Rental with Driver | AD Tour Travel</title>
+        {/* Title (SEO + Clickable) */}
+        <title>
+          Car Rental with Driver in Delhi | Sedan, SUV, Tempo Traveller | AD
+          Tour Travel
+        </title>
 
+        {/* Description */}
         <meta
           name="description"
-          content="Explore our fleet of comfortable travel cars including sedan, SUV and tempo traveller. Reliable car rental with driver for tours and outstation trips across North India."
+          content="Book car rental with driver in Delhi. Choose from sedan, SUV, and tempo traveller for outstation trips to Manali, Shimla, Agra, Jaipur and across North India at best prices."
         />
 
+        {/* Canonical */}
         <link
           rel="canonical"
           href={`${import.meta.env.VITE_WEBSITE}/rent-car`}
@@ -24,18 +30,37 @@ export default function RentCar() {
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="Travel Cars | Car Rental with Driver | AD Tour Travel"
+          content="Car Rental with Driver in Delhi | AD Tour Travel"
         />
 
         <meta
           property="og:description"
-          content="Choose from our range of sedan, SUV and tempo traveller vehicles with professional drivers for comfortable tours and outstation journeys."
+          content="Affordable sedan, SUV, and tempo traveller car rental with driver for tours and outstation travel across North India."
         />
 
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content={`${import.meta.env.VITE_WEBSITE}/rent-car`}
+        />
+        <meta
+          property="og:image"
+          content={`${import.meta.env.VITE_WEBSITE}/logo.png`}
+        />
+
+        {/* Twitter (extra boost) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Car Rental with Driver in Delhi | AD Tour Travel"
+        />
+        <meta
+          name="twitter:description"
+          content="Choose from sedan, SUV and tempo traveller for comfortable tours and outstation trips."
+        />
+        <meta
+          name="twitter:image"
+          content={`${import.meta.env.VITE_WEBSITE}/logo.png`}
         />
       </Helmet>
       {/* Hero Section */}

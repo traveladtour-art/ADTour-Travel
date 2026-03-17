@@ -20,24 +20,18 @@ export default function Home({
   return (
     <div className="w-full">
       <Helmet>
-        {/* Page Title */}
+        {/* Title (High CTR + SEO) */}
         <title>
-          Delhi Car Rental with Driver | Tour Travel Service | {siteName}
+          Delhi Car Rental with Driver | Taxi Service in Delhi | {siteName}
         </title>
 
-        {/* Meta Description */}
+        {/* Description */}
         <meta
           name="description"
-          content="Book reliable car rental with driver and tour & travel services from Delhi to Manali, Shimla, Agra, Jaipur and across North India. Comfortable cars and professional drivers for safe journeys."
+          content="Book Delhi car rental with driver at best prices. AD Tour Travel offers taxi service, outstation cabs to Manali, Shimla, Agra, Jaipur and across North India with experienced drivers."
         />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="Delhi car rental with driver, Delhi tour and travel service, Delhi to Manali car with driver, Delhi to Shimla car service, outstation car rental Delhi"
-        />
-
-        {/* Canonical URL */}
+        {/* Canonical */}
         <link rel="canonical" href={siteUrl} />
 
         {/* Open Graph */}
@@ -45,17 +39,27 @@ export default function Home({
           property="og:title"
           content={`Delhi Car Rental with Driver | ${siteName}`}
         />
-
         <meta
           property="og:description"
-          content="Reliable car rental with driver and tour & travel services from Delhi to Manali, Shimla, Agra, Jaipur and across North India."
+          content="Affordable taxi service and car rental with driver from Delhi to Manali, Shimla, Agra, Jaipur and North India."
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:image" content={`${siteUrl}/logo.png`} />
 
-        {/* Structured Data (Schema.org) */}
+        {/* Twitter (extra boost 🔥) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={`Delhi Car Rental with Driver | ${siteName}`}
+        />
+        <meta
+          name="twitter:description"
+          content="Reliable taxi service and car rental with driver across North India."
+        />
+        <meta name="twitter:image" content={`${siteUrl}/logo.png`} />
+
+        {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -64,6 +68,7 @@ export default function Home({
             url: siteUrl,
             logo: `${siteUrl}/logo.png`,
             telephone: phone,
+            areaServed: "North India",
             address: {
               "@type": "PostalAddress",
               addressLocality: "Delhi",
