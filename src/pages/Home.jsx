@@ -21,8 +21,9 @@ export default function Home({
     <div className="w-full">
       <Helmet>
         {/* Title (High CTR + SEO) */}
+
         <title>
-          Delhi Car Rental with Driver | Taxi Service in Delhi | {siteName}
+          {siteName} | Delhi Car Rental with Driver | Taxi Service in Delhi
         </title>
 
         {/* Description */}
