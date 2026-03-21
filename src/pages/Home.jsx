@@ -67,7 +67,7 @@ export default function Home({
             "@type": "TravelAgency",
             name: siteName,
             url: siteUrl,
-            logo: `${siteUrl}/logo.png`,
+            logo: `${siteUrl}logo.png`,
             telephone: phone,
             areaServed: "North India",
             address: {
